@@ -1,0 +1,54 @@
+body {
+    color: teal;
+    font-family: bradley hand itc, cursive;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-align: justify;
+}
+article {
+    color:  yellow;
+    margin: 20px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: yellow;
+
+}
+h1 {
+    color: teal;
+    font-size: 2em;
+    text-align: center;
+    background-color: crimson;
+}
+h2 {
+    color: teal;
+    font-size: 1.5em;
+}
+p {
+    color: teal;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li a{
+    display: block;
+    background-color: #f4e508;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 10px;
+}
