@@ -56,3 +56,12 @@ nav ul li a{
     font-display: block;
     margin: 0 10px;
 }
+div {
+    color: teal;
+    font-family: bradley hand itc, cursive;
+    margin: 20px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

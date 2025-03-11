@@ -13,15 +13,45 @@
         body {
             color: rgb(24, 113, 215); 
             font-family: bradley hand, cursive;}
+        .button {
+            background-color: crimson;
+            border: 5px solid teal;
+            color: teal;
+            padding: width 100%;
+            text-align: right;
+            text-decoration: none;
+            display: block;
+            font-size: xx-large;
+            margin: auto;
+            cursor: pointer;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            font-family: bradley hand, cursive;
+        }
+        .button:hover {background-color: yellow}
+
+        .button:active {
+            background-color: yellow;
+            box-shadow: 0 5px crimson;
+            transform: translateY(10px);
+    }
+    img {
+        display: table-cell;
+        margin: auto;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        
+    }   
     </style>
 </head>
 <body>
     <h1>Dusty's Site</h1>
     
     <div> 
-        <img src="images/dustyphoto.jpg" alt="Dusty's Picture" image-align="right" width="25%" height="25%">  
+        <img src="images/dustyphoto.jpg" alt="Dusty's Picture" width="25%" height="25%">  
     </div>
-        
+        <button class="button">E-Mail Me!</button>
     <p style="font-family: bradley hand, cursive;
        color: rgb(16, 180, 192); font-size: normal; text-align: left; line-height: 2em;
        padding: 10px; margin: 10px; border: 2px solid rgb(16, 180, 192); border-radius: 10px; background-color: black;
