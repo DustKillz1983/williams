@@ -5,51 +5,7 @@
     <title>Dusty's Interests</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .special {
-            color: rgb(220, 234, 13);
-            font-family: bradley hand, cursive;
-            line-height: 2em;
-        }
-        body {
-            color: rgb(24, 113, 215); 
-            font-family: bradley hand, cursive;}
-        .button {
-            background-color: crimson;
-            border: 5px solid teal;
-            color: teal;
-            padding: 100%;
-            text-align: right;
-            text-decoration: none;
-            display: block;
-            font-size: xx-large;
-            margin: auto;
-            cursor: pointer;
-            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-            font-family: comicsans;
-
-        }
-        .button:hover {background-color: yellow}
-
-        .button:active {
-            background-color: yellow;
-            box-shadow: 0 5px crimson;
-            transform: translateY(10px);
-    }
-    img {
-        display: flex;
-        column-count: 3;
-    }
-    div {
-        display: flex;
-        justify-content: center;
-        column-count: 3;
-        transition: width 2s;
-        width: 25%;
-    }
-    div:hover {
-        width: 100%;
-    }      
-    p {
+        p {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         color: teal;
         font-size: normal; 
@@ -69,19 +25,24 @@
 </head>
 <body>
     <h1>Dusty's Interests</h1>
-    <img src="images/dustyboxes.jpg" alt="Dusty's Picture" width="25%" height="25%"
-    display: flex;
-    margin: auto;>
-    <img src="images/dustycardshoplogo.jpg" alt="Card Shop Logo" width="25%" height="25%" 
-    display: flex;>
-    <img src="images/frontcardcase.jpg" alt="Card Case" width="25%" height="25%"
-    display: flex;>
+    <div style="display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 50px;
+    justify-content: center;">
+        <img src="images/dustyboxes.jpg" alt="Dusty's Picture" width="250" height="250"
+    >
+        <img src="images/dustycardshoplogo.jpg" alt="Card Shop Logo" width="250" height="250" 
+    >
+        <img src="images/frontcardcase.jpg" alt="Card Case" width="250" height="250"
+    >
+    </div>
     
-   <p style="font-family: fantasy;">
+    
+   <p>
         Welcome to Dusty's Interests.  I have a few things that I really enjoy doing.  I love driving around in my car and listening to music.  I also love watching scary movies.  I can't forget mentioning my little cat, Slick.  He is mean, but he is my baby.  I also love learning new things and that is why I am taking this course.  I already have a Bachelor's Degree, but I want to continue learning about different things.  I always wanted to know more about how a website is created, so here I am.</p>
-    <p>I really enjoy driving around and listening to music in my car. I also love watching scary movies.  And I can't forget mentioning my little cat, Slick.  He is mean, but he is my baby.  I also love learning new things and that is why I am taking this course.  I already have a Bachelor's Degree, but I want to continue learning about different things.  I always wanted to know more about how a website is created, so here I am.</p>
-    <nav>
-        <ul>
+    <p> I really enjoy driving around and listening to music in my car. I also love watching scary movies.  And I can't forget mentioning my little cat, Slick.  He is mean, but he is my baby.  I also love learning new things and that is why I am taking this course.  I already have a Bachelor's Degree, but I want to continue learning about different things.  I always wanted to know more about how a website is created, so here I am.</p>
+    <nav style="display: table-footer-group;">
+        <ul style="text-align: left;">
             <li><a href="index.html">Home</a></li>
             <li><a href="where.html">Where I Live</a></li>
             <li><a href="work.html">What I Do</a></li>
