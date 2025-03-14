@@ -21,22 +21,26 @@ p {
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-nav ul {
-    color: teal;
-    font-family: bradley hand itc, cursive;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+
 nav ul li a{
-    display: block;
     color: teal;
-    font-family: bradley hand itc, cursive;
-    font-size: normal;
-    font-weight: bold;
-    font-display: block;
-    margin: 0 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration:double
+}
+nav ul li a:hover {
+    color: crimson;
+}
+nav ul li a:active {
+    color: crimson;
+}
+nav ul li a:visited {
+    color: rgb(225, 205, 19);
+}
+nav ul li a:link {
+    color: teal;
+}
+nav ul li a:focus {
+    color: crimson;
 }
 div {
     color: teal;
@@ -47,5 +51,9 @@ div {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: inline-block;
+}
+.button {
+    justify-content: center;
+    text-align: center;
 }
 
