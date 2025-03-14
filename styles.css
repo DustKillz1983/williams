@@ -23,7 +23,7 @@ p {
 }
 
 nav ul li a{
-    color: teal;
+    color: yellow;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration:double
 }
@@ -34,10 +34,10 @@ nav ul li a:active {
     color: crimson;
 }
 nav ul li a:visited {
-    color: rgb(225, 205, 19);
+    color: rgb(22, 19, 225);
 }
 nav ul li a:link {
-    color: teal;
+    color: yellow
 }
 nav ul li a:focus {
     color: crimson;
