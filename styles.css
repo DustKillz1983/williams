@@ -1,14 +1,14 @@
 body {
     color: teal;
-    font-family: bradley hand itc, cursive;
-    margin: 0;
-    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1;
+    padding: 1;
     background-color: black;
     text-align: justify;
 }
 h1 {
     color: teal;
-    font-size: 2em;
+    font-size: xx-large;
     text-align: center;
     background-color: crimson;
 }
@@ -18,42 +18,31 @@ h2 {
 }
 p {
     color: teal;
-    text-align: center;
+    text-align: left;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
 }
 
-nav ul li a{
+nav ul li a menu{
     color: yellow;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-decoration:double
+      
 }
-nav ul li a:hover {
-    color: crimson;
-}
-nav ul li a:active {
-    color: crimson;
-}
+
 nav ul li a:visited {
-    color: rgb(22, 19, 225);
-}
-nav ul li a:link {
-    color: yellow
-}
-nav ul li a:focus {
-    color: crimson;
+    color: rgb(230, 11, 11);
 }
 div {
     color: teal;
-    font-family: bradley hand itc, cursive;
-    margin: 20px;
-    padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: black;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: inline-block;
+    
 }
 .button {
     justify-content: center;
     text-align: center;
 }
-
+.current {
+    text-transform: uppercase;
+    color: yellow;
+}
