@@ -21,6 +21,12 @@ p {
     text-align: left;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: black;
+    border-style: outset;
+    border-color: crimson;
+    border-width: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
 }
 
 nav ul li a menu{
@@ -45,4 +51,17 @@ div {
 .current {
     text-transform: uppercase;
     color: yellow;
+}
+img {
+    border-style: solid;
+    border-color: crimson;
+    border-width: 5px;
+     border-radius: 5px;
+}
+nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
 }
