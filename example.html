@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Types</title>
+    <style>
+        .block {
+            display: block;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+        }
+        .inline {
+            display: inline;
+            border: 1px solid red;
+            padding: 5px;
+        }
+        .inline-block {
+            display: inline-block;
+            border: 1px solid green;
+            width: 100px;
+            height: 50px;
+            margin: 5px;
+        }
+        .none {
+            display: none;
+        }
+        .flex {
+            display: flex;
+            border: 1px solid blue;
+            gap: 10px;
+        }
+        .grid {
+            display: grid;
+            border: 1px solid purple;
+            grid-template-columns: repeat(2, 100px);
+            gap: 10px;
+        }
+        .table {
+            display: table;
+            border: 1px solid black;
+        }
+        .inline-table {
+            display: inline-table;
+            border: 1px solid orange;
+        }
+        .list-item {
+            display: list-item;
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Display Types</h1>
+
+    <div class="block">Block Element</div>
+    <span class="inline">Inline Element</span>
+    <span class="inline">Another Inline Element</span>
+    
+    <div class="inline-block">Inline-Block</div>
+    <div class="inline-block">Another Inline-Block</div>
+    
+    <div class="none">You won't see this as it uses `display: none`.</div>
+    
+    <div class="flex">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+    </div>
+    
+    <div class="grid">
+        <div>Grid Item 1</div>
+        <div>Grid Item 2</div>
+        <div>Grid Item 3</div>
+        <div>Grid Item 4</div>
+    </div>
+
+    <div class="table">
+        <div>Table Row 1</div>
+        <div>Table Row 2</div>
+    </div>
+
+    <div class="inline-table">
+        <div>Inline-Table Row 1</div>
+        <div>Inline-Table Row 2</div>
+    </div>
+
+    <ul>
+        <li class="list-item">List Item</li>
+    </ul>
+</body>
+</html>
