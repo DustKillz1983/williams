@@ -58,10 +58,19 @@ img {
     border-width: 5px;
      border-radius: 5px;
 }
-nav {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
-}
+nav ul {
+    list-style-type:none;
+    padding: 5;
+    margin: 5;
+    display: flex; /* Makes items appear in a row */
+    justify-content: space-evenly; /* Spreads items across */
+  }
+  
+  nav li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background:mediumseagreen; /* Green color */
+    color: teal;
+    border-radius: 15px;
+  }
+  
