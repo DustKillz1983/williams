@@ -16,10 +16,24 @@
         padding: 10px;
         margin: 10px;
       }
+      .skip-link {
+            position:relative;
+            top: 0px;
+            left: 0px;
+            padding: 5px 5px;
+            text-decoration: none;
+            display:flex;
+        }
+        .skip-link:focus {
+            display: flex;
+        }
+    
       
     </style>
 </head>
+<a href="#main" class="skip-link">Skip to Main Content</a>
 <section>
+    
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -37,11 +51,12 @@
     <header>
         <h1>Interesting....</h1>
     </header>
+
     <p>
         Welcome to "Interesting....".  I have a few things that I really enjoy doing or that I am interested in. Throughout this page I am mentioning some of my hobbies and such. There are some more "Interesting...." topics in the navigation bar at the top of the page. On this page you will find sections on my basic hobbies and interests. That includes my animals, my favorite music, books, places to eat and movies.
     </p>
       
-        <aside>
+        <aside id="main">
             <div class="centerimages">
                 <img src="images/kitty2.jpg" alt="Slick" width="250" height="250">
             </div>

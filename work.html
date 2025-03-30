@@ -9,9 +9,21 @@
             display: table-cell;
             margin: auto;
         }
+        .skip-link {
+            position:relative;
+            top: 0px;
+            left: 0px;
+            padding: 5px 5px;
+            text-decoration: none;
+            display:flex;
+        }
+        .skip-link:focus {
+            display: flex;
+        }
     </style>
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -40,7 +52,7 @@
 
     </address>
     <br>
-    <p>Welcome to the Shelby County Flea Market!  I rent a booth here where I run a sports card shop.  I call this place, Dusty's Card Shop! You can see below the awesome logo I created.  The logo colors are black and yellow and I think it turned out pretty great.  Dusty's Card Shop, or DCS for short, sells all sorts of collectibles. DCS isn't just cards, even though basketball, football, baseball, soccer, and Pokemon cards are my biggest sellers.  DCS also sells pogs, antique bottles, Beanie Babies, puzzles, books, and old video games.  I have also been known to buy and trade if I am in the mood.</p>
+    <p id="main">Welcome to the Shelby County Flea Market!  I rent a booth here where I run a sports card shop.  I call this place, Dusty's Card Shop! You can see below the awesome logo I created.  The logo colors are black and yellow and I think it turned out pretty great.  Dusty's Card Shop, or DCS for short, sells all sorts of collectibles. DCS isn't just cards, even though basketball, football, baseball, soccer, and Pokemon cards are my biggest sellers.  DCS also sells pogs, antique bottles, Beanie Babies, puzzles, books, and old video games.  I have also been known to buy and trade if I am in the mood.</p>
     <br>
     
     <div style="display: grid;

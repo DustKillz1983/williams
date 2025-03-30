@@ -44,11 +44,22 @@
     div {
         display: flex;
         justify-content: center;
-        
-    }   
+    }
+    .skip-link {
+            position:relative;
+            top: 0px;
+            left: 0px;
+            padding: 5px 5px;
+            text-decoration: none;
+            display:flex;
+        }
+        .skip-link:focus {
+            display: flex;
+        }
     </style>
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
     <nav>
         <ul>
             <li class="current"><a href="index.html">Home</a></li>
@@ -68,8 +79,8 @@
     </header>    
         
         
-<main id="main">
-    <div> 
+<main>
+    <div id="main"> 
         <img src="images/dustyphoto.jpg" alt="Dusty's Picture" width="25%" height="25%">  
     </div>
         
