@@ -73,4 +73,14 @@ nav ul {
     color: teal;
     border-radius: 15px;
   }
+  .centerimages {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px
+  }
+  .centerimages {
+    max-width: 100%;
+    height: auto;
+  }
   
