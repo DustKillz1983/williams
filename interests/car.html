@@ -46,7 +46,14 @@
                 background-color: black;
                 border-color: teal;
             }
+           
     </style>
+    <script>
+        function showProperties(element){
+        document.getElementById('message').innerHTML = element.alt;
+        }
+
+    </script>
 </head>
 <body>
     <header>
@@ -70,14 +77,28 @@
     <p>
         I have always been very interested in cars.  I have had several really nice ones over the years.  Unfortunately, I have totaled more than I care to count and I have had more fender benders than you can count on both hands but I really want to document on this page all the cool rides I have owned. 
     </p>
-    <div class="container">
-        <img src="https://dustkillz1983.github.io/williams/images/infiniti.jpg" alt="Dusty's Infiniti">
-        <img src="https://dustkillz1983.github.io/williams/images/hondaaccord.jpeg" alt="Dusty's Honda">
-        <img src="https://dustkillz1983.github.io/williams/images/yellowcelica.jpeg" alt="Dusty's Yellow Celica">
-        <img src="https://dustkillz1983.github.io/williams/images/silvereclipse.jpeg" alt="Dusty's Silver Eclipse">
-        <img src="https://dustkillz1983.github.io/williams/images/redcelica.jpeg" alt="Dusty's Red Celica">
-        <img src="https://dustkillz1983.github.io/williams/images/fordexplorer.jpeg" alt="Dusty's Ford Explorer">
+
+    <div id = "message" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 35px; text-align: center;">
+        Hover over the image to display the car information.
     </div>
+    <br>
+    <br>
+    <div class="container">
+
+    <img class = "preview" alt = "Forest Green Ford Explorer" src = "https://dustkillz1983.github.io/williams/images/fordexplorer.jpeg" onmouseover = "showProperties(this)" onmouseleave = "document.getElementById('message').innerHTML='Hover over an image';">
+
+    <img class = "preview" alt = "Red Toyota Celica" src = "https://dustkillz1983.github.io/williams/images/redcelica.jpeg" onmouseover = "showProperties(this)" onmouseleave = "document.getElementById('message').innerHTML='Hover over an image';">
+
+    <img class = "preview" alt = "Silver Mitsubishi Eclipse" src = "https://dustkillz1983.github.io/williams/images/silvereclipse.jpeg" onmouseover = "showProperties(this)" onmouseleave = "document.getElementById('message').innerHTML='Hover over an image';">
+
+    <img class = "preview" alt = "Yellow Toyota Celica" src = "https://dustkillz1983.github.io/williams/images/yellowcelica.jpeg" onmouseover = "showProperties(this)" onmouseleave = "document.getElementById('message').innerHTML='Hover over an image';">
+
+    <img class = "preview" alt = "Black Honda Accord Coupe" src ="https://dustkillz1983.github.io/williams/images/hondaaccord.jpeg" onmouseover = "showProperties(this)" onmouseleave = "document.getElementById('message').innerHTML='Hover over an image';">
+
+    <img class = "preview" alt = "Red Infiniti" src = "https://dustkillz1983.github.io/williams/images/infiniti.jpg" onmouseover = "showProperties(this)" onmouseleave = "document.getElementById('message').innerHTML='Hover over an image';">
+
+    </div>
+    
 <p>As soon as I got my license I realized that one of my great enjoyments in life was going to be driving around cruising the back roads of the Kentucky area. A great way for me to relax is to hop in the car and put on some of my favorite music.  I love exploring the country roads around here. It is very calming. I can also sing along with my favorite songs on Sirius XM radio. Unfortunately, last year I was diagnosed with a seizure disorder and since there is no way to know when you will have an episode it is not a good idea to drive.  Technically you only have to refrain from driving for three months after a seizure occurs, but I don't really trust that determination. What if I was to have one while I was driving and injure or kill someone? I definitely don't want this to happen, so I have not driven for over a year. I am finally going to try it again soon, so please everyone say a prayer for me.</p>
 <p>Now, I would like to share a little information about each of my cars and why I had to purchase new ones. On the bottom right, the 1994 Ford Explorer was my first car/suv. This was my practice and learning vehicle which was a gift from my parents. I remember having some good times with it. I remember adding my sub speakers and amp to the back, kicking in the four wheel drive and plowing through some snow, washing it by hand at the car wash every couple of days, and even adding the remote start button. I'm not sure if this was my first car accident but it is the first I can recall. I was coming up a ramp to merge onto interstate 64 when I hit a slippery spot and spun 360 degrees and slid into the guardrail. It scared my really bad, but we were all ok. However, the front bumper was loose and it was rubbing against the tire. I drove it all the way home in that condition, which was probably not the best of ideas.  I'm not really sure if that was why I purchased my first "new car" or not, but soon after I did move on to car number two.</p>
     

@@ -57,6 +57,9 @@
             display: flex;
         }
     </style>
+    <script>
+       
+    </script>
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to Main Content</a>
@@ -77,14 +80,14 @@
     <header>
     <h1>Dusty's Site</h1>
     </header>    
-        
-        
+    <script src="clock2.js"></script>
+    <div id="clock">8:10:45</div>    
 <main>
     <div id="main"> 
         <img src="images/dustyphoto.jpg" alt="Dusty's Picture" width="25%" height="25%">  
     </div>
         
-    <p>
+    <p id="stuff">
        Welcome to Dusty's Site! I am currently taking some web design courses through Coursera's online learning program. So far I am really enjoying it. This site is a result of what I am learning through them. At the beginning I only knew some basic HTML, but now I have graduated on to CSS which I would like to think I am fairly proficient with thus far. My next course is going to be exploring Javascript which I am excited about. I know nothing about it at the moment but as I learn over the duration of the course I will be applying it in real time to this site!
        <br>
        <br>
@@ -95,6 +98,7 @@
        <br>
        <br>
        I am putting a lot of time into my vacation's page.  I've had several really great vacations to mention and document. I've been to Gatlinburg, TN, Biltmore Mansion in Asheville, NC, Amsterdam, and Florida.  I have also been to London and Paris but that was before the age of digital cameras and iPhones so I will have to scan some of those pictures in later.  I am excited to share these experiences with you.  Check out my vacations page right here.....<br>
+       <br>
        <a href="https://dustkillz1983.github.io/williams/vacations.html" class="button">My Vacations!</a>
        <br>
        <br>
@@ -102,6 +106,17 @@
     </p>
     <a href="mailto:dustkillz1983@gmail.com" class="button">E-Mail Me!</a>
 </main>
+<p>You have visited this page <span id="counter"></span> times.</p>
+
+    <script>
+        // Retrieve the current count from local storage
+        let count = localStorage.getItem('page_view_count') || 0;
+        count++;
+        localStorage.setItem('page_view_count', count);
+
+        // Display the count
+        document.getElementById('counter').textContent = count;
+    </script>
     
     
     </body>

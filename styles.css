@@ -83,4 +83,10 @@ nav ul {
     max-width: 100%;
     height: auto;
   }
+  #clock {
+    font-size: 50px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
  
