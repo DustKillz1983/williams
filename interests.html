@@ -27,12 +27,31 @@
         .skip-link:focus {
             display: flex;
         }
+		
+		@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.headers {
+    opacity: 0; /* Hide headers initially */
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animate {
+    opacity: 1; /* Show headers */
+    transform: translateY(0);
+    animation: bounce 2s infinite; /* Continuous bounce animation */
+}
+
+
     
       
     </style>
 </head>
-<a href="#main" class="skip-link">Skip to Main Content</a>
-<section>
+
     
     <nav>
         <ul>
@@ -40,27 +59,40 @@
             <li><a href="where.html">My Crib</a></li>
             <li><a href="work.html">What I Do</a></li>
             <li class="current"><a href="interests.html">Interesting.....</a></li>
-                <ul>
-                    <li><a href="interests/car.html">My Ride</a></li>
-                    <li><a href="interests/collecting.html">Collecting</a></li>
-                    <li><a href="interests/learning.html">What I Know</a></li>
-                    <li><a href="interests/investing.html">I Bet</a></li>
-                </ul>   
+                 
         </ul>
         </nav>
     <header>
         <h1>Interesting....</h1>
     </header>
-
+	<nav>
+		<ul>
+        <li><a href="interests/car.html">My Ride</a></li>
+        <li><a href="interests/collecting.html">Collecting</a></li>
+        <li><a href="interests/learning.html">What I Know</a></li>
+        <li><a href="interests/investing.html">I Bet</a></li>
+    	</ul> 
+	</nav>
+	
+	<body>
+		
+			
     <p>
         Welcome to "Interesting....".  I have a few things that I really enjoy doing or that I am interested in. Throughout this page I am mentioning some of my hobbies and such. There are some more "Interesting...." topics in the navigation bar at the top of the page. On this page you will find sections on my basic hobbies and interests. That includes my animals, my favorite music, books, places to eat and movies.
     </p>
-      
+	
+      <header>
+		<h1 class="headers">Slick the Kitty!</h1>	
+	  </header>
         <aside id="main">
             <div class="centerimages">
                 <img src="images/kitty2.jpg" alt="Slick" width="250" height="250">
             </div>
             <p>I have to mention my cat, Slick, first. He is my baby. Sometimes he is mean and scratches and bites, but I have to love him. He is just playing when he attacks and draws blood, so he doesn't really have evil intentions. I have had him around twelve years, maybe longer. I rescued him from the Humane Society. They were set up in a pet store on Brownsboro Road. There was an adorable dog, who was around a year old, caged right beside a baby kitten.  I could not choose between the two so I just got them both. I named the cat Slick and the dog Mojo. Sadly, Mojo passed away a couple years ago.</p>
+			
+		<header>
+			<h1 class="headers">Bowling</h1>	
+		</header>
         </aside>
     <section>
         <div class="centerimages">
@@ -70,6 +102,11 @@
         </div>
             <p>I love to go bowling! I am not very good at bowling, but I do love playing ever so often. My mom and I like to hit up Main Event every few months for a couple of hours of professional style bowling. Also, whenever my friends are in town we like to play as well.</p>
     </section>
+	
+	<header>
+		<h1 class="headers">Restaurants</h1>	
+	</header>
+	
     <section>
         <div class="centerimages">
             <img src="images/olivegarden.jpg" alt="Olive Garden" width="250" height="250">
@@ -79,6 +116,11 @@
         
         <p>These are a few of my favorite restaurants.  We have the Olive Garden, which is italian. Their salads are one of their signature dishes, which come with endless breadsticks.  I always have cheese ravioli as my entree.  Then we have a couple of excellent steak houses. Rafferty's and Columbia's are two of the best steak houses around Kentucky and I would reccomend to anyone around here to try them out. I think there are many Rafferty's locations across the United States, but Columbia's is exclusive to the Lexington area.</p>
     </section>
+	
+	<header>
+		<h1 class="headers">Golfing</h1>	
+	</header>
+	
     <section>
         <div class="centerimages">
             <img src="images/golf.jpg" alt="Golf" width="250" height="250">
@@ -86,8 +128,13 @@
             <img src="images/golf2.jpg" alt="Golf" width="250" height="250">
         </div>
         
-        <p>I started golfing at around age 12 and played a lot throughout middle and high school, but since then have not played much. But that does not make me love the sport any less.  I enjoy it because it is a relaxing and social, yet challenging and strategic game.  I have played at several nice courses around the area.  <a href=http://www.weissingerhills.com>Weissinger Hills Golf Course</a> is very nice, especially if you are looking for a long course.</p>
+        <p>I started golfing at around age 12 and played a lot throughout middle and high school, but since then have not played much. But that does not make me love the sport any less.  I enjoy it because it is a relaxing and social, yet challenging and strategic game.  I have played at several nice courses around the area.  <a href="http://www.weissingerhills.com>Weissinger Hills Golf Course"></a> is very nice, especially if you are looking for a long course.</p>
     </section>
+	
+	<header>
+		<h1 class="headers">Good Reading Materials</h1>	
+	</header>
+	
     <section>
         <div class="centerimages">
             <img src="images/dkintense.jpg" alt="Koontz" width="250" height="250">
@@ -97,6 +144,11 @@
         
         <p>I also love to read in my spare time.  I enjoy thriller, horror, and mystery genres. My favorite authors are Dean Koontz and Stephen King.</p>
     </section>
+	
+	<header>
+		<h1 class="headers">Linkin Park</h1>	
+	</header>
+	
     <section>
         <div class="centerimages">
             <img src="images/lp1.jpg" alt="Linkin Park" width="250" height="250">
@@ -106,6 +158,11 @@
         
         <p>Linkin Park came on the scene when I was in high school. I had just purchased my first car, a red Toyota Celica, which I equipped with three 10" subs and a very nice amp.  You can't even imagine the sound that this audio system produced! It was incredible! Rap and hip-hop songs, which put out the most bass, was what this system was designed for and it sounded great. I remember, specifically, bumping Nelly as my friends and I were approaching the school parking lot in the mornings. Even though I really did appreciate rap, my most favorite music genre was rock, pop-rock, or alternative.  During that time, and up until recent years, there was nobody better the Linkin Park, or LP for short.  I remember the song, "Crawling" as one of their most famous first releases.  LP rocked! Nobody was better at rocking a crowd than them. And they continued to be the best of rock up until a few years ago when their lead singer, Chester Bennington, commited suicide. I absolutely loved their music so this was very sad for me, and what hurt me worse was that I had never seen them in concert.  They have just, in the last year, attempted to replace him in the band, wich didn't sound terrible, but the could never be as good as they were with him.  Here are a few pictures of them as they were a very big interest of mine over the years and a big inspiration! </p>
     </section>
+	
+	<header>
+		<h1 class="headers">Amazing Destinations</h1>	
+	</header>
+	
     <section>
         <div class="centerimages">
             <img src="images/travel.jpg" alt="Travel" width="250" height="250">
@@ -146,6 +203,11 @@
             </ul>  
             
     </section>   
+	
+	<header>
+		<h1 class="headers">The Wildcats</h1>	
+	</header>
+	
     <section>
         <div class="centerimages">
             <img src="images/uk.jpg" alt="UK" width="250" height="250">
@@ -156,9 +218,26 @@
     <p>The University of Kentucky Wildcats are an excellent team and most favorite basketball team.  They just got kicked out of the March Madness Tournament last night which was depressing, but we will try again next year. They have won the tournament several times over the years so they are a team that stands out to many.  The Louisville Cardinals are also a well-known team here in Kentucky.  I also root for them but they are not my favorite. Also, I attended University of Kentucky College which was a great experience.</p>
     </section>    
         
-    </div>
+  
+	
+
        
-    
+    <script>
+		const headers = document.querySelectorAll(".headers");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+        } 
+    });
+}, { threshold: 0.5 }); // Trigger when 50% visible
+
+headers.forEach(header => observer.observe(header));
+			
+			
+
+		</script>
     
 </body>
 </html>
