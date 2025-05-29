@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trip to Biltmore Mansion</title>
+    <link rel="stylesheet" href="https://dustkillz1983.github.io/williams/styles.css">
+    <style>
+        div {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            justify-content: center;
+            
+        }
+        img {
+            border: 10 solid black;
+            border-radius: 15px;
+        }
+				@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.headers {
+    opacity: 0; /* Hide headers initially */
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animate {
+    opacity: 1; /* Show headers */
+    transform: translateY(0);
+    animation: bounce 2s infinite; /* Continuous bounce animation */
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="current"><a href="https://dustkillz1983.github.io/williams/index.html">Hom</a></li>
+            <li><a href="https://dustkillz1983.github.io/williams/where.html">My Crib</a></li>
+            <li><a href="https://dustkillz1983.github.io/williams/work.html">What I Do</a></li>
+            <li><a href="https://dustkillz1983.github.io/williams/interests.html">My Interests</a></li>
+                <ul>
+                    <li><a href="https://dustkillz1983.github.io/williams/interests/car.html">My Ride</a></li>
+                    <li><a href="https://dustkillz1983.github.io/williams/interests/collecting.html">Collecting</a></li>
+                    <li><a href="https://dustkillz1983.github.io/williams/interests/learning.html">What I Know</a></li>
+                    <li><a href="https://dustkillz1983.github.io/williams/interests/investing.html">I Bet</a></li>
+                </ul>   
+        </ul>
+        </nav>
+    <header>
+        <h1>Biltmore Mansion</h1>
+    </header>
+   
+    <p>
+    
+    These are some pictures of my trip to Asheville, North Carolina.  Jared and I visited Biltmore Mansion during our trip. This is inside the mansion.  This was the central part where there were many statues and flowers.
+    </p>
+	
+	<header>
+		<h1 class="headers">Inside The Mansion</h1>	
+	  </header>
+	
+<div>
+    <img src="https://dustkillz1983.github.io/williams/images/biltmorecenter.jpg" alt="Biltmore Mansion" width="75%" height="75%" padding="25%" spaceing="10px">
+
+    <img src="https://dustkillz1983.github.io/williams/images/biltmoredeck.jpg" alt="Biltmore Mansion" height="75%" width="75%" padding="25%" spaceing="10px">
+   
+    <img src="https://dustkillz1983.github.io/williams/images/biltmoreoutside.jpg" alt="Biltmore Mansion" height="75%" width="75%" padding="10px">
+    
+    <img src="https://dustkillz1983.github.io/williams/images/biltmoresky.jpg" alt="Biltmore Mansion" height="75%" width="75%" padding="10px">
+</div>
+	
+	<header>
+		<h1 class="headers">The Gardens</h1>	
+	  </header>
+	
+	
+	<header>
+		<h1 class="headers">The Grounds</h1>	
+	  </header>
+        <script>
+		const headers = document.querySelectorAll(".headers");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+        } 
+    });
+}, { threshold: 0.5 }); // Trigger when 50% visible
+
+headers.forEach(header => observer.observe(header));
+			
+			
+
+		</script>
+</body>
+</html>
